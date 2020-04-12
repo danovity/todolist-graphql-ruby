@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  creator_id: 1
+  assignee_id: 1
+  title: MyString
+  description: MyString
+  completed_at: 2020-04-12 13:04:48
+
+two:
+  creator_id: 1
+  assignee_id: 1
+  title: MyString
+  description: MyString
+  completed_at: 2020-04-12 13:04:48
