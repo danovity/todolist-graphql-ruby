@@ -1,4 +1,4 @@
-class GraphqlController < ApplicationController
+class GraphQLController < ApplicationController
   # If accessing from outside this domain, nullify the session
   # This allows for outside API access while preventing CSRF attacks,
   # but you'll have to authenticate your user separately
@@ -13,7 +13,7 @@ class GraphqlController < ApplicationController
       session: session,
       current_user: current_user
     }
-    result = TodolistGraphqlRubySchema.execute(query, variables: variables, context: context, operation_name: operation_name)
+    result = GraphQLSchema.execute(query, variables: variables, context: context, operation_name: operation_name)
     render json: result
   rescue => e
     raise e unless Rails.env.development?
