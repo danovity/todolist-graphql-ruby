@@ -1,0 +1,10 @@
+{
+  "name": "todolist",
+  "description": "My awesome todolist Rails GraphQL app, running on Dokku!",
+  "keywords": ["dokku", "rails"],
+  "scripts": {
+    "dokku": {
+      "postdeploy": "bundle exec rails db:migrate"
+    }
+  }
+}
