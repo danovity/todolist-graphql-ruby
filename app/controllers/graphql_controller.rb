@@ -28,7 +28,7 @@ class GraphQLController < ApplicationController
     return unless request.headers['token'].present?
 
     token = AuthToken.token_for_user(user)
-    user_id = token.gsub('user-id:', '').to_i
+    user_id = AuthToken.user_from_token(token)
     User.find user_id
   rescue ActiveSupport::MessageVerifier::InvalidSignature
     nil

@@ -4,7 +4,7 @@ module AuthToken
   PREFIX = 'user-id'.freeze
 
   def token_for_user(user)
-    crypt.encrypt_and_sign("#{PREFIX}: #{user.id}")
+    crypt.encrypt_and_sign("#{PREFIX}#{user.id}")
   end
 
   def user_from_token(token)
