@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+TODOLIST GraphQL API using Ruby on Rails, https://todolist.api-hackernews-reloaded.tk/graphql
 
-Things you may want to cover:
+## How To Access
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- use your preferred GraphQL Ide to access the endpoint, https://todolist.api-hackernews-reloaded.tk/graphql
