@@ -27,8 +27,7 @@ class GraphQLController < ApplicationController
     # if we want to change the sign-in strategy, this is the place to do it
     return unless request.headers['token'].present?
 
-    crypt = ActiveSupport::MessageEncryptor.new(Rails.application.credentials.secret_key_base.byteslice(0..31))
-    token = crypt.decrypt_and_verify request.headers['token']
+    token = AuthToken.token_for_user(user)
     user_id = token.gsub('user-id:', '').to_i
     User.find user_id
   rescue ActiveSupport::MessageVerifier::InvalidSignature
