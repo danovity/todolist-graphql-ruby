@@ -19,6 +19,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'graphql', '1.9.17'
 gem 'date_flag'
 gem 'pry-remote'
+gem 'bcrypt', '~> 3.1.13'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
