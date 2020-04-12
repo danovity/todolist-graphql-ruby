@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  creator_id: 1
+  assignee_id: 1
+  title: MyString
+  description: MyString
+  completed_at: 2020-04-12 14:40:58
+  deactivated_at: 2020-04-12 14:40:58
+  deadline: 2020-04-12 14:40:58
+  task_id: 1
+
+two:
+  creator_id: 1
+  assignee_id: 1
+  title: MyString
+  description: MyString
+  completed_at: 2020-04-12 14:40:58
+  deactivated_at: 2020-04-12 14:40:58
+  deadline: 2020-04-12 14:40:58
+  task_id: 1
