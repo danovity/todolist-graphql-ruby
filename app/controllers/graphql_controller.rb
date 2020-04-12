@@ -27,7 +27,6 @@ class GraphQLController < ApplicationController
     # if we want to change the sign-in strategy, this is the place to do it
     return unless request.headers['token'].present?
 
-    token = AuthToken.token_for_user(user)
     user_id = AuthToken.user_from_token(token)
     User.find user_id
   rescue ActiveSupport::MessageVerifier::InvalidSignature
