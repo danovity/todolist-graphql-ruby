@@ -9,7 +9,7 @@ module Mutations
     field :task, TypesTask::TaskType, null: false
 
     def resolve(task_id: nil)
-      task = Task.find_by(task_id)
+      task = Task.find(task_id)
       task&.deactivated!
 
       {task: task}

@@ -8,7 +8,7 @@ module Mutations
     field :subtask, TypesSubtask::SubtaskType, null: false
 
     def resolve(subtask_id: nil)
-      subtask = Task.find_by(subtask_id)
+      subtask = Task.find(subtask_id)
       subtask&.deactivated!
 
       {subtask: subtask}
