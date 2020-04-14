@@ -4,10 +4,10 @@ TODOLIST GraphQL API using Ruby on Rails, https://todolist.api-hackernews-reload
 
 ## How To Access
 
-- use your preferred GraphQL Ide to access the endpoint, https://todolist.api-hackernews-reloaded.tk/graphql
+Please use your preferred GraphQL Ide to access the endpoint, https://todolist.api-hackernews-reloaded.tk/graphql
 
-Step 1, Register User using the `registerUser` mutation
-Step 2, Sign in User using the `signInUser` mutation with the registered user's credentials, make sure you ask for the `token` in the response
+- Step 1, Register User using the `registerUser` mutation
+- Step 2, Sign in User using the `signInUser` mutation with the registered user's credentials, make sure you ask for the `token` in the response
 
 ```
 # Sample Mutation (SignInUser)
@@ -45,5 +45,5 @@ mutation signInUser($input: SignInUserInput!){
   }
 }
 ```
-Step 3, Copy the token, and add a field called `token` to `Headers`, lastly copy the token value to that field.
-Step 4, You should now be able to create, read, update, and delete the tasks/subtasks
+- Step 3, Copy the token, and add a field called `token` to `Headers`, lastly copy the token value to that field.
+- Step 4, You should now be able to create, read, update, and delete the tasks/subtasks
