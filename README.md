@@ -1,10 +1,10 @@
 # README
 
-TODOLIST GraphQL API using Ruby on Rails, https://todolist.api-hackernews-reloaded.tk/graphql
+TODOLIST GraphQL API using Ruby on Rails, https://todolistapp.seanye.dev/graphql
 
 ## How To Access
 
-Please use your preferred GraphQL Ide to access the endpoint, https://todolist.api-hackernews-reloaded.tk/graphql
+Please use your preferred GraphQL Ide to access the endpoint, https://todolistapp.seanye.dev/graphql
 
 - Step 1, Register User using the `registerUser` mutation
 - Step 2, Sign in User using the `signInUser` mutation with the registered user's credentials, make sure you ask for the `token` in the response
